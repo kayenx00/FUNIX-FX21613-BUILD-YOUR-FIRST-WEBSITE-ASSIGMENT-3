@@ -1,0 +1,504 @@
+* {
+    margin: 0px;
+}
+
+.bg-grey {
+    background: #f7f7f7;
+}
+
+
+#nav-bar {
+    text-align: center;
+}
+
+#banner{
+    position: relative; 
+    text-align: center;
+    color: white;
+    font-family: 'Times New Roman', Times, sans-serif;
+    padding : 0;
+}
+
+/* set size for the img */
+.banner-img {
+    width: 100%;
+    height: 350px;
+    
+}
+
+.banner-name {
+    /* set the position to absolute so the name and job can be out of the flow display on the img */
+    position: absolute;
+    
+    /* I copy the ratio top and left ratio from the link provided in the assigment suggestion */
+    top: 25%;
+    left: 50%;  
+    transform: translate(-50%, -50%);
+}
+
+/* format the name */
+.name {
+    font-weight: 200;
+    opacity: 1.5;
+}
+/* format the job */
+.job{
+    font-size: smaller;
+    display: inline-block;
+}
+
+/* navbar section */
+
+section > .container{
+    /* width: 100%; */
+    margin: auto;
+    display: block;
+    padding: 0 0;
+}
+
+/* set all text in the nav bar to be in the middle */
+#navbar{
+    text-align: center;
+}
+/* display the items in navbar using grid */
+.nav-bar-items{
+    display: flex;
+    overflow: hidden;
+    /* divide grid into 5 */
+    /* grid-template-columns: 1fr 1fr 2fr 1fr 1fr; */
+    justify-content: center;
+    /* grid-gap: 1px; */
+    align-items: center;
+    /* padding: 0 300px; */
+}
+.name-job {
+    display: flex;
+    flex-direction: column;
+}
+.display-job {
+    display: inline-block;
+    font-size: 10px;
+    color: #8a8383;
+}
+/* set height, and set border for each element in the grid to have the gray "|" on their left */
+.nav-bar-items > a, .nav-bar-items > div{
+    box-sizing: border-box;
+    background-color: white;
+    height: 60px;
+    border-left: 1px solid rgb(227, 223, 223);
+}
+/* set the border of the last elements in the grid to have the gray "|" on its right*/
+.nav-bar-items > a:last-child {
+    border-right: 1px solid rgb(227, 223, 223);
+}
+/* set size and text for anchor element in navbar */
+.nav-item {
+    padding: 12px !important; /*
+    overflow: hidden !important; */
+}
+/* format link */
+.nav-bar-items > a:link,
+a:hover,
+a:visited {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* job objective and personal info */
+
+.objective-and-personal-info {
+    display: flex;
+    flex-direction: row;
+    padding-right:0px !important;
+    padding-left:0px !important;
+}
+.target, .personal-info{
+    padding: 50px;
+}
+.section-title {
+    margin-bottom: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* .pl-pr-100{
+    padding-left: 50px;
+    padding-right: 50px;
+} */
+.info > li {
+    line-height: 1.5;
+    list-style-type: none;
+}
+
+.info > li > span {
+    font-weight: bold;
+}
+
+.personal-info {
+    background-color: rgba(224, 220, 220, 0.947);
+}
+
+.social-media {
+    padding-top : 35px;
+}
+/* color the icons */
+.icon-user,
+.icon-doc-text-inv,
+.icon-mail-alt,
+.icon-star-1,
+.icon-twitter,
+.icon-facebook,
+.icon-gplus,
+.icon-linkedin,
+.icon-facebook-circled,
+.icon-linkedin-circled,
+.icon-github-circled {
+  color:rgb(99, 223, 242);
+}
+/* job info */
+
+.job-info-container {
+    display: grid;
+    grid-template-columns: minmax(0,1fr) minmax(0, 1fr) minmax(0, 1fr);
+    padding: 20px 100px;
+    gap: 20px;
+}
+
+.job-info-details {
+    padding-left: 15px;
+}
+/* set display for flex */
+.experience-header, 
+.education-header, 
+.activities-header,
+.hobbies-header, 
+.language-header, 
+.skills-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+/* set size and color for header icons */
+.ic-toolbox, .ic-pencil, .ic-telescope,
+.ic-mic, .ic-tools-2{
+    font-size: 3em;
+    color: #dcd7d7;
+}
+
+.experience-header > h1, .education-header > h1, .activities-header > h1,
+.hobbies-header > h1, .language-header > h1, .skills-header > h1 {
+    padding-top: 10px;
+    color: black;
+    font-weight: bold;
+    /* font-size: large; */
+    /* padding-bottom: 10px; */
+}
+
+.experience, .education, .activities,
+.hobbies, .language, .skills {
+    padding: 20px 30px 20px;
+    border: 3px solid rgba(75, 71, 71, 0.286);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* format the unorder list for e-e-a details */
+.e-e-a-info-details li::marker{ 
+    color: blue;
+    font-size: 1.5rem;
+}
+/* format the unorder list for e-e-a-details details */
+.e-e-a-info-details-details li::marker{ 
+    color:rgb(154, 160, 161);
+    content: "- ";
+    font-size: 1.5rem;
+}
+
+.e-e-a-info-details-details li p{ 
+    color:rgb(154, 160, 161);
+    margin: 5px 0;
+}
+/* format the date in each block in job-info grid */
+.date{
+    padding: 20px 0;
+    font-style: italic;
+    color:rgb(154, 160, 161)
+}
+
+.date > span {
+    background-color: rgb(25, 172, 234);
+    color: white;
+    border-radius: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*  format language and skills blocks */
+
+.l-s-details-info {
+    padding-top: 10px;
+    color: black;
+    font-weight: normal;
+}
+/* the idea is made and inspired by Le Nhat Truong - FX21573 */
+/* Idea: create an flex area with each items as a straight line with blue color */
+/* Then later override some of the blue color lines with gray color (Ex: blue blue gray gray represent the level 2 */
+.english-level, .japanese-level, .html-css-level, 
+.node-level, .bootstrap-level, .js-level{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  gap: 10px;
+}
+/* color level bar */
+.lvl-1,
+.lvl-2,
+.lvl-3 {
+  background-color: rgb(25, 162, 225);
+  width: 60px;
+  height: 2px;
+}
+/* Fundamental */
+.english-level > .lvl-3, .japanese-level > .lvl-3, .japanese-level > .lvl-2,
+.html-css-level > .lvl-3, .html-css-level > .lvl-2, .js-level > .lvl-3, 
+.node-level > .lvl-3, .bootstrap-level > .lvl-3, .bootstrap-level > .lvl-2   {
+  background-color: #8a8383;
+}
+/* Hobbies */
+/* display the list of hobbies */
+.hobbies-details {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* set the size of hobbies details */
+.hobbies-details-details {
+    height: 85px;
+    width: 85px;
+}
+
+/* format the name of hobbies */
+
+.hobbies-details-details p {
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* set margin from icon to <p> (name of hobbies) */
+
+.hobbies-details-details span {
+    margin-bottom: 5px;
+}
+/* format the icons */
+.ic-megaphone,
+.ic-strategy,
+.ic-hotairballoon,
+.ic-basket {
+  box-sizing: border-box;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  padding-top: 10px;
+  color: rgb(25, 162, 225);
+  font-size: 1.5em;
+  border: 1px solid rgb(25, 162, 225);
+  border-radius: 50% 50% 50% 50%;
+}
+
+
+/* certificates */
+
+.section-title{
+    padding-top: 5px;
+    padding-bottom: 25px;
+    /* padding: 5px 0px 25px 50px; */
+    margin: 0
+}
+
+/* set certificate container to grid */
+
+.certificate-container {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+}
+.certificate-details {
+    display: flex;
+    gap: 30px;
+}
+/* format the certificate image */
+.certificate-details-img {
+    width: auto;
+    height: 120px;
+}
+/* hide the list marker */
+.certificate-details-details li {
+    list-style-type: none;
+    color:rgb(154, 160, 161);
+}
+
+/* format certificate name */
+.certificate-name {
+    font-size:larger;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* set padding for c1, c2, c3 */
+
+.c1, .c2, .c3 {
+    padding: 20px 0 20px 0;
+}
+
+/* format the orange line for c1 and c3 */
+
+.c3 {
+    /* border: 20px 0; */
+    grid-column: span 2;
+    border-top: 1px solid orange;
+    padding-top: 30px;
+}
+
+.c2 {
+    margin-left: 25px;
+}
+
+.c1 {
+    border-right: 1px solid orange;
+}
+
+/* project section */
+/* define the image to cover the width of flex components */
+.project-details-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* places three projects in a container and displays it by grid, define the text font and text color */
+.project-container {
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* justify-content: center; */
+    gap: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(154, 160, 161);
+    margin-bottom: 30px;
+}
+
+/* format and display the block of each project (each project has 5 sub-components) */
+
+.project-details-container {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column ;
+    width: 400px;
+    border: 2px solid #d4cfcf;
+}
+
+/* 
+.project-details-img {
+    width: 300px;
+    height: auto;
+} */
+
+/* display each sub-components (preview and name, date, descripntion, objective and technology) to be flex components */
+
+.project-year-place-and-position, .project-description, .project-objective, 
+.project-technology {
+    display: flex;
+    gap: 25px
+}
+
+
+/* format one of the sub-components (the one responsible for display project img and name) */
+
+.project-preview-and-name > img {
+    object-fit: cover;
+    height: 100%;
+    max-width: 100%;
+}
+
+/* format the name in one of the sub-components (the one responsible for display project img and name) */
+.project-name {
+    margin-top: 15px; 
+    vertical-align: center;
+    padding-left: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* format some padding, and add gray top border for each sub-components */
+
+.project-description, .project-objective, .project-technology{
+    padding: 15px;    
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+    border-top: 2px solid #d4cfcf;
+    /* border-bottom: 2px solid #d4cfcf; */
+}
+.project-year-place-and-position {
+    padding: 15px;    
+    /* display: flex; */
+    /* grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr); */
+    border-top: 2px solid #d4cfcf;
+}
+/* center text in one of the components (the one responsible for date, place and position) */
+.project-year-place-and-position {
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+/* footer */
+
+/* set the unordered list in the middle */
+.footer-details {
+    margin: 20px 0; 
+    text-align: center;
+}
+.footer-details li {
+    /*change the li to be inline so multiple li is set on one line*/
+    display: inline-block;
+    font-size: 25px;
+    /* set space between each li element */
+    margin-right: 20px; 
+}
+/* hide all hidden class */
+
+/* handle the arrows in the view more view less button in job-info section */
+
+/* arrow icon in view more/view less button */
+
+.arrow-right {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+}
+.arrow-down {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+}
+
+/* display the button in the shape of pill capsule (PS: I copied this from stack and I still have no idea how it works :D) */
+.view-button {
+    border-radius: 999px !important;
+}
+.view-button {
+    width: auto; 
+    height: auto;
+    background-color:yellow;
+    color: black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.hidden {
+    display: none;
+}
+
+.name-job {
+    display: none;
+}

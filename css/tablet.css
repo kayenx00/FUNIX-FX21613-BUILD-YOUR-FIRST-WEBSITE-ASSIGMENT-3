@@ -1,0 +1,45 @@
+@media (max-width: 992px) {
+    /* Hide name and job in nav-bar */
+    .name-job {
+        display: none;
+    }
+
+    .certificate-details {
+        display: flex;
+        flex-direction: column;
+    }
+    /* .certificate-details-img {
+        height: auto;
+    } */
+
+    .job-info-container {
+        display: grid;
+        grid-template-columns: minmax(0,1fr) minmax(0, 1fr);
+        padding: 20px 5px;
+        /* gap: 20px; */
+    }
+    .c1, .c2, .c3 {
+        padding: 20px 0 20px 0px;
+    }
+
+    .certificate-details-img {
+        align-self: start;
+    }
+    .certificate-details-details {
+        padding-left: 0px;
+    }
+    .c3 img {
+        align-self: start;
+    }
+
+    .project-container {
+        justify-content: start;
+        gap: 10px;
+      }
+
+    /* .project-details-container {
+        max-width: min-content;
+        height: auto;
+        overflow: auto;
+    } */
+}
