@@ -12,7 +12,7 @@
     
     .objective-and-personal-info {
         display: flex;
-        flex-direction: column !important;
+        flex-direction: column;
     }
 
     .job-info-container {
